@@ -1,0 +1,14 @@
+---
+- name: Run Cleanup Script
+  hosts: app-server
+  become: true
+
+  tasks:
+    - name: Copy Cleanup Script to Server
+      copy:
+        src: cleanup.sh
+        dest: /opt/cleanup.sh
+     
+
+    - name: Run Cleanup Script
+      shell: /opt/cleanup.sh

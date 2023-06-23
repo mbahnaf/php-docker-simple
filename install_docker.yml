@@ -1,0 +1,17 @@
+---
+- name: Install docker
+  hosts: app-server
+  become: true
+
+  tasks:
+    - name: Copy install_docker.sh script to app server
+      copy:
+        src: ./install_docker.sh
+        dest: /opt/
+        owner: root
+        group: root
+        mode: '0777'
+      
+
+    - name: Execute install_docker.sh script on app server
+      command: /opt/install_docker.sh

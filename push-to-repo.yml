@@ -1,0 +1,36 @@
+---
+- name: Push App Image to Docker Hub
+  hosts: app-server
+  become: true
+
+  tasks:  
+    - name: Copy secrets to app server
+      copy:
+        src: /opt/my_password.txt
+        dest: /opt/
+        owner: root
+        group: root
+        mode: '0777'
+        
+    - name: Copy Dockerfile to app server
+      copy:
+        src: ./Dockerfile
+        dest: /opt/
+        owner: root
+        group: root
+        mode: '0777'
+
+  
+    - name: Copy Push Script to Server
+      copy:
+        src: push-to-repo.sh
+        dest: /opt/push-to-repo.sh
+     
+
+    - name: Run Push Script
+      shell: /opt/push-to-repo.sh
+      
+
+    
+
+    

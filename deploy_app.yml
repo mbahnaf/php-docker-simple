@@ -1,0 +1,19 @@
+---
+- name: Deploy Notes App
+  hosts: app-server
+  become: true
+
+  tasks:
+    - name: Copy Docker and Docker Compose files to app server
+      copy:
+        src: ./
+        dest: /opt/
+        owner: root
+        group: root
+        mode: '0777'
+      
+
+    - name: Build and run app container
+      command: docker compose up -d
+      args:
+        chdir: /opt/

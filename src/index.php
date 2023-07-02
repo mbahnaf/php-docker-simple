@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello from the docker yoooo container";
+echo "Hello from the docker yooo container";
 
 $mysqli = new mysqli("db", "root", "example", "company1");
 

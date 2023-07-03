@@ -108,7 +108,7 @@ white-space: nowrap;
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>This is my Small Database Management System mini project</p>
+								<p>This is OnlineShop!</p>
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>New York ,Kumbalagodu</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+1-12344465767</a></li>

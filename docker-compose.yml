@@ -16,9 +16,11 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: n0passw0rd121
+      MYSQL_DATABASE: onlineshop
     volumes:
-      - mysql-data:/var/lib/mysql
+      - /opt/mysql-data:/var/lib/mysql
+      - ./src/database/onlineshop.sql:/docker-entrypoint-initdb.d/1.sql
 
   adminer:
     image: adminer

@@ -20,7 +20,7 @@ services:
       MYSQL_DATABASE: onlineshop
     volumes:
       - /opt/mysql-data:/var/lib/mysql
-   
+      - ./src/database/onlineshop.sql:/docker-entrypoint-initdb.d/1.sql
 
   adminer:
     image: adminer

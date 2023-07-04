@@ -108,11 +108,11 @@ white-space: nowrap;
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>This is OnlineShop!</p>
+								<p>Welcome to Mudir Dokaan!</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>New York ,Kumbalagodu</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Dhaka, Bangladesh</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+1-12344465767</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>puneethreddy951@gmail.com</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>mutasim.billah@bjitacademy.com</a></li>
 								</ul>
 							</div>
 						</div>

@@ -1,5 +1,5 @@
 ---
-- name: Deploy Notes App
+- name: Deploy App
   hosts: app-server
   become: true
 

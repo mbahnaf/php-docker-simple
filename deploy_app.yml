@@ -1,6 +1,6 @@
 ---
 - name: Deploy App
-  hosts: app-server
+  hosts: localhost
   become: true
 
   tasks:
